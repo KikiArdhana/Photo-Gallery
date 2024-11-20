@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gallery">
+        <!-- Small images to hover over -->
+        <div class="thumb">
+            <img src="https://cdn.britannica.com/30/221530-050-FA978136/Law-School-University-of-Michigan-Ann-Arbor-Michigan.jpg" alt="University Of Michigan" class="small-img" onmouseover="upDate(this)" onmouseout="undo()">
+        </div>
+        <div class="thumb">
+            <img src="https://yt3.googleusercontent.com/ytc/AIdro_nJteQVkAu1W-rpXrFWo7gtxHLfVfhdNnneD_8MCVGdeMc=s900-c-k-c0x00ffffff-no-rj" alt="Logo" class="small-img" onmouseover="upDate(this)" onmouseout="undo()">
+        </div>
+        <div class="thumb">
+            <img src="https://www.harringtonhousing.com/uploads/0003/3066/2023/01/11/what-makes-the-university-of-michigan-unique.jpg" alt="" class="small-img" onmouseover="upDate(this)" onmouseout="undo()">
+        </div>
+    </div>
+
+    <!-- Large display area -->
+    <div id="image" class="large-img">
+        Hover over an image above to display here.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
